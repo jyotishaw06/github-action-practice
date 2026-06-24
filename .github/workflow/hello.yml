@@ -1,0 +1,21 @@
+# workflow
+# should have Name
+name: hello
+
+on:
+
+
+# Jobs
+# should be inside the workflow
+jobs: 
+  say-hello:
+    run-on: ubuntu-latest
+  steps:
+    - name: say hello to everyone
+      run: echo "Hello Dosto"
+      
+# Steps
+# should be inside the jobs
+
+# Actions
+# Should be inside the Steps
