@@ -1,8 +1,8 @@
-#github action practice
+# github action practice
 
-##concepts
+## concepts
 
-#workflow
+## workflow
 
 To create github action workflow you need a folder called '.github/workflow'
 
