@@ -1,14 +1,16 @@
-# workflow
-# should have Name
-name: hello
-
+# workflow (No indentation required for naming the workflow)
+name: Hello
+# on tells when the workflow should run (Give indentation by tab)
 on:
+  workflow-dispatch:
 
 
-# Jobs
-# should be inside the workflow
+# Jobs tells the worflow should be , there can be one or more than one jobs , hence we write jobs 
+# jobs is an object so needs indentation 
 jobs: 
+  #1st jobs (give indentation)
   say-hello:
+    # Create an Ephermal Container with Ubuntu running
     run-on: ubuntu-latest
   steps:
     - name: say hello to everyone
