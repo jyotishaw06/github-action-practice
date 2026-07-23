@@ -12,9 +12,9 @@ jobs:
     # Create an Ephermal Container with Ubuntu running
     runs-on: ubuntu-latest
 
-  setps:
-     - name: Say hello
-       run: echo "hello dost"m
+    steps:
+      - name: Say hello
+        run: echo "hello dost"
       
     
       
