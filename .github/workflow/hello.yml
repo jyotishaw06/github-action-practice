@@ -3,8 +3,7 @@ name: Hello
 # on tells when the workflow should run (Give indentation by tab)
 on:
   workflow-dispatch:
-
-
+  
 # Jobs tells the worflow should be , there can be one or more than one jobs , hence we write jobs 
 # jobs is an object so needs indentation 
 jobs: 
