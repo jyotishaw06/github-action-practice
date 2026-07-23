@@ -1,0 +1,18 @@
+# what is the goal of xthe workflow
+# Goal: Whenever someone changes the python code
+# the liner will check if the sytax , format, indentation(Linting) is correct or not
+name: Auto Linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    #this this step will automatically clone the code of the current branch into the runer
+    steps:
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
+
+
