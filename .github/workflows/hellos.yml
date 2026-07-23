@@ -11,10 +11,10 @@ jobs:
   say-hello:
     # Create an Ephermal Container with Ubuntu running
     runs-on: ubuntu-latest
-    
-  steps:
-    - name: hello
-    run: echo "heelo dosto"
+
+  setps:
+     - name: Say hello
+       run: echo "hello dost"m
       
     
       
