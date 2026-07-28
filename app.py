@@ -1,12 +1,16 @@
-# this code from main
-from flask import Flask, render_template
-app = Flask(__name__)
+# Python program to swap two variables
 
-@app.route('/')
-def hello_world():
-    return render_template('index.html')
+x = 5
+y = 10
 
+# To take inputs from the user
+#x = input('Enter value of x: ')
+#y = input('Enter value of y: ')
 
-@app.route('/health')
-def health():
-    return 'Server is up and running'
+# create a temporary variable and swap the values
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
