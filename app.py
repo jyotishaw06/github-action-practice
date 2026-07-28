@@ -1,16 +1,14 @@
-# Python program to swap two variables
+# This code is from https://github.com/LondheShubham153/flask-app-ecs/tree/main
+# Flask App
+from flask import Flask, render_template
+app = Flask(__name__)
 
-x = 5
-y = 10
 
-# To take inputs from the user
-#x = input('Enter value of x: ')
-#y = input('Enter value of y: ')
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
-# create a temporary variable and swap the values
-temp = x
-x = y
-y = temp
 
-print('The value of x after swapping: {}'.format(x))
-print('The value of y after swapping: {}'.format(y))
+@app.route('/health')
+def health():
+    return 'Server is up and running'
